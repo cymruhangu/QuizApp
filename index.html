@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" name="description" content="Matt's Quiz App">
+    <meta name="viewport" content="width=device-width">
+    <title>Science and Nature Quiz App</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main role="main">
+      <header class="hidden" role="banner">
+        <div id="quiz-title"><h1>Science and Nature Quiz App</h1></div>
+      </header>
+      <section class="splash" role="intro">
+          <div id="splash-box">
+            <h1 id="intro1">Do you know Science & Nature?</h1>
+            <h2 id="intro2">Take the Quiz</h2>
+            <form class="start-form" id="start-quiz-form"> 
+              <fieldset id="splash-set" class="hidden">
+                <legend id="intro3">{ select level of difficulty & click play }</legend>
+                <label class="tooltip">
+                  <input type="radio" name="level" value="level1" checked="checked">
+                  <p class="response">Level 1</p>
+                  <span class="tooltiptext">easy</span>
+                </label>
+                <label class="tooltip">
+                  <input type="radio" name="level" value="level2">
+                  <p class="response">Level 2</p>
+                  <span class="tooltiptext">medium</span>
+                </label>
+                <label class="tooltip">
+                  <input type="radio" name="level" value="level3">
+                  <p class="response">Level 3</p>
+                  <span class="tooltiptext">hard</span>
+                </label>
+                <button class="btn level" type="submit">Play</button>
+            </fieldset>
+          </form>
+        </div>
+  </section>
+    <section class="quiz-container hidden" role="main quiz">
+        <!-- TEMPLATE FOR QUIZ WILL BE INSERTED HERE -->
+    </section>
+        <section class="final-score hidden" role="quiz results">
+          <div id="last">
+              <h2>Congratulations! <div id="final">BLAH</div></h2>
+              <button id="play-again" type="button">Play Again</button>
+          </div>
+         </section>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+       <script src="data.js"></script>
+      <script src="index.js"></script>
+    </main>   
+  </body>
+</html>

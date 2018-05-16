@@ -1,0 +1,296 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, main {margin:0;padding:0;height:100%;}
+
+body {
+  font-family: 'Roboto', sans-serif;
+
+}
+main {
+  width: 100%;
+}
+
+#splash-box {
+  position:absolute;
+  right:0;
+  bottom: 0;
+  left: 0;
+  height: 400px;
+  margin:auto;
+}
+
+#intro1, #intro2 {
+  font-size: 5em;
+  display: none;
+  margin: 0 auto;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#intro1, #intro2, #intro3 {
+  color: white;
+  position: relative;
+
+}
+
+#intro3 {
+  font-size: 1.5em;
+  font-weight: lighter;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 65px;
+    background-color: #cbcdd8;
+    color: black;
+    text-align: center;
+    font-size: 0.5em;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 60%;
+    left: 60%;
+    margin-left: -60px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #cbcdd8 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*SPLASH*/
+#splash-set label {
+  display: inline-block;
+  font-size: 1.8em;
+  padding-left: 15px;
+
+}
+
+#spash-set label p {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#splash-set {
+  text-align: center;
+}
+
+.start-form input[type='radio']:checked + .response{
+  font-weight: bold;
+  color: #edc663;
+}
+.response {
+  color: white;
+  font-size: 1em;
+}
+
+header {
+  text-align: center;
+}
+
+button:hover, label:hover{
+  cursor: pointer;
+}
+
+/*Splash page*/
+.splash {
+  background-image: url("https://images.unsplash.com/photo-1506726303195-92eb8c09e128?ixlib=\
+    rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=41fe8369ad5bd0517da7bc9ce48f77fb&auto=format&fit=crop&w=3450&q=80");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button {
+  border: 1px solid grey;
+  background-color: #86c1f4;
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+  height: 60px;
+  border-radius: 15px;
+  font-size: 1.5em;
+}
+
+.instructions {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+  font-weight: lighter;
+}
+
+.quiz-footer {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.3em;
+  color: white;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+fieldset {
+  border: none;
+  margin: 0 auto;
+}
+
+form input[type='radio'] {
+  display: inline-block;
+  opacity: 0;
+}
+
+.quiz-form {
+  margin-bottom: 0;
+}
+
+.quiz-form input[type='radio']:checked + .answer{
+  font-weight: bold;
+  background-color: #c9d8f2;
+  color: black;
+}
+
+.answer {
+  display: block;
+  color: black;
+  font-style: italic;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+legend {
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.answer {
+  color: #e8eced;
+}
+/*===========*/
+
+.slide{
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  width:625px;
+  height: 800px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  border: 5px double white;
+  background-color: rgba(147, 219, 249, 0.1);
+
+}
+
+.slide h3 {
+  color: white;
+  font-size: 1.5em;
+}
+
+.quiz-container {
+  background-image: url(""); 
+  height: 100%; 
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*border: 5px solid green;*/
+  text-shadow: 2px 2px 4px #000000;
+}
+
+
+.final-score {
+  background-image: url("https://images.unsplash.com/photo-1492031215329-791748ee1253?ixlib=\
+    rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0b397609a54a5c66b91219247dfcde39&auto=format&fit=crop&w=2934&q=80");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.final-score  {
+  padding-top: 100px;
+}
+
+#last h2{
+  color: white;
+  margin: 0 auto;
+  font-size: 2.5em;
+  text-align: center;
+  padding-bottom: 25px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+@media only screen and (max-width: 600px) {
+  #splash-box {
+    top:10px;
+    height: 400px;
+    margin:auto;
+  }
+  #intro1, #intro2 {
+    font-size: 3.0em;
+  }
+  #intro3 {
+    font-size: 1.7em;
+  }
+  main {
+    height: 100%;
+  }
+  .slide {
+    width: 100%;
+    height: 100%;
+  }
+  .slide h3 {
+    font-size: 1.0em;
+  }
+  .quiz-form label {
+    font-size: 0.75em;
+    line-height: 1;
+  }
+  .scoreboard {
+    font-size: 0.75em;
+  }
+  .question, .next {
+    height: 40px;
+    width: 100px;
+  }
+}
+
+
+
+
+
