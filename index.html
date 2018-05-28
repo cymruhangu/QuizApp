@@ -8,11 +8,11 @@
     <link href="index.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <main role="main">
+    <main role="main" role="main">
       <header class="hidden" role="banner">
         <div id="quiz-title"><h1>Science and Nature Quiz App</h1></div>
       </header>
-      <section class="splash" role="intro">
+      <section class="splash" role="region">
           <div id="splash-box">
             <h1 id="intro1">Do you know Science & Nature?</h1>
             <h2 id="intro2">Take the Quiz</h2>
@@ -34,15 +34,15 @@
                   <p class="response">Level 3</p>
                   <span class="tooltiptext">hard</span>
                 </label>
-                <button class="btn level" type="submit">Play</button>
+                <button class="btn level" name="level" type="submit">Play</button>
             </fieldset>
           </form>
         </div>
   </section>
-    <section class="quiz-container hidden" role="main quiz">
+    <section class="quiz-container hidden" role="region">
         <!-- TEMPLATE FOR QUIZ WILL BE INSERTED HERE -->
     </section>
-        <section class="final-score hidden" role="quiz results">
+        <section class="final-score hidden" role="region">
           <div id="last">
               <h2>Congratulations! <div id="final">BLAH</div></h2>
               <button id="play-again" type="button">Play Again</button>

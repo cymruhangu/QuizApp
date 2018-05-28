@@ -88,7 +88,7 @@ function generateQuestionString(dataSet, i, currentScore){
         	<h3 class="instructions">(select one and submit}</h3>
         </header>
         <form class="quiz-form" id="quiz-form${current}">
-        	<fieldset class="radioPanel">
+        	<fieldset class="radioPanel" role="radiogroup" aria-labelledby="quiz-form${current}">
         		<legend>${dataSet[i].question}</legend>
         		<label>
 	        		<input class="a" type="radio" name="question${current}" value="a" required>
@@ -106,10 +106,11 @@ function generateQuestionString(dataSet, i, currentScore){
 	          		<input class="d" type="radio" name="question${current}" value="d">
 	          		<span class="answer answer_d">${dataSet[i].options.d}</span>
 	          	</label>
-	          	 <button class="question question${current}" form="quiz-form${current}" type="submit">Submit</button>
-	          </fieldset>
+	          	</fieldset>
+	          	 <button class="question question${current}" name="question${current}" form="quiz-form${current}" type="submit">Submit</button>
+	          
 	       </form>
-	       <section class="quiz-footer hidden" role="score summary">
+	       <section class="quiz-footer hidden" role="region">
         		<div class="scoreboard"> 
             		<p class="verdict"></p>
             		<p class="score">Current Score: 0/0</p>
